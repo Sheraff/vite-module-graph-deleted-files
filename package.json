@@ -1,0 +1,7 @@
+{
+  "name": "vite-module-graph-deleted-files",
+  "private": true,
+  "type": "module",
+  "scripts": { "repro": "node repro.mjs" },
+  "devDependencies": { "vite": "8.3.5" }
+}
