@@ -1,5 +1,7 @@
 # Vite dev server keeps module graph nodes of deleted files
 
+Issue: https://github.com/vitejs/vite/issues/23907
+
 `repro.mjs` starts a dev server (no browser) and runs N cycles: create `src/gen/mod-<i>.js`, import it from
 `src/entry.js`, transform both, delete the generated file, wait for the watcher's `unlink`. It prints the client
 module graph map sizes next to the number of files that exist.
